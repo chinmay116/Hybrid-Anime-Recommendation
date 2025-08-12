@@ -1,0 +1,24 @@
+2025-08-11 13:23:59,017 - INFO - Data Processing Initialized!!!
+2025-08-11 13:23:59,656 - INFO - Data Loaded Successfully for Data Processing!!!
+2025-08-11 13:23:59,768 - INFO - Filtered Users Successfully!!!
+2025-08-11 13:24:00,494 - INFO - Scalling done for Processing
+2025-08-11 13:24:00,584 - INFO - Encoding done for Users & Anime!!!
+2025-08-11 13:24:00,946 - INFO - Data Splitted Successfully!!!
+2025-08-11 13:24:00,954 - INFO - user2user_encoded saved Successfully in Processed Directory
+2025-08-11 13:24:00,961 - INFO - user2user_decoded saved Successfully in Processed Directory
+2025-08-11 13:24:00,989 - INFO - anime2anime_encoded saved Successfully in Processed Directory
+2025-08-11 13:24:01,018 - INFO - anime2anime_decoded saved Successfully in Processed Directory
+2025-08-11 13:24:03,834 - INFO - All the Training, Testing data as well as rating_df is Saved Now!!!
+2025-08-11 13:24:07,645 - INFO - DF and Synopsis_df Saved Successfully!!!
+2025-08-11 13:24:07,647 - INFO - Data Processing Pipeline Run Successfully!!!
+2025-08-11 21:06:24,995 - INFO - Model Training Initialized!!!
+2025-08-11 21:06:25,063 - INFO - Data loaded successfully for Model Training!!!
+2025-08-11 21:06:25,082 - INFO - Successfully read the YAML file
+2025-08-11 21:06:25,082 - INFO - Loaded Configuration from config.yaml
+2025-08-11 21:06:25,177 - INFO - Model Created Successfully!!!
+2025-08-11 21:06:57,620 - INFO - Model Training Completed!!!
+2025-08-11 21:06:57,620 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-11 21:06:57,687 - INFO - Model saved to artifacts/model\model.h5
+2025-08-11 21:06:57,689 - INFO - Extracting weights for user_embedding
+2025-08-11 21:06:57,695 - INFO - Extracting weights for anime_embedding
+2025-08-11 21:06:57,701 - INFO - User & Anime Weights saved Successfully!!!

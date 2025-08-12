@@ -1,0 +1,9 @@
+2025-08-04 21:22:17,641 - INFO - Successfully read the YAML file
+2025-08-04 21:22:17,642 - INFO - Data Ingestion started with mlops-project-2-anime-recommender and file is ['anime.csv', 'anime_with_synopsis.csv', 'animelist.csv']
+2025-08-04 21:22:17,642 - INFO - Starting Data Ingestion Process
+2025-08-04 21:22:17,642 - INFO - Connecting to bucket: 'mlops-project-2-anime-recommender'
+2025-08-04 21:22:20,943 - INFO - Downloading Smaller files i.e. anime and anime_with_synopsis
+2025-08-04 21:22:24,396 - INFO - Downloading Smaller files i.e. anime and anime_with_synopsis
+2025-08-04 21:31:33,271 - INFO - Large File detected Downloading only 5M rows
+2025-08-04 21:31:33,284 - INFO - Data Ingestion Completed Successfully
+2025-08-04 21:31:33,284 - INFO - Data Ingestion Completed
