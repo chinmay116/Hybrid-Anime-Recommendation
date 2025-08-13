@@ -33,16 +33,25 @@ pipeline {
 
         stage('DVC Pull') {
             steps {
-                withCredentials([file(credentialsId: 'gcp-anime-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
-                    sh """
-                        echo "Using creds from: \$GOOGLE_APPLICATION_CREDENTIALS"
-                        ls -l \$GOOGLE_APPLICATION_CREDENTIALS
+                withCredentials([file(credentialsId: 'gcp-anime-key', variable: 'GCP_KEY')]) {
+                    script {
+                        echo 'DVC Pull...'
+                        sh '''
                         . ${VENV_DIR}/bin/activate
-                        export GOOGLE_APPLICATION_CREDENTIALS=\$GOOGLE_APPLICATION_CREDENTIALS
+                        
+                        # Force DVC to use the key from Jenkins
+                        export GOOGLE_APPLICATION_CREDENTIALS="${GCP_KEY}"
+                        
+                        # Make sure remote is correct and not broken
+                        dvc remote modify myremote credentialpath "${GCP_KEY}" || true
+                        
+                        # Pull data from remote
                         dvc pull -v
-                    """
+                        '''
+                    }
                 }
             }
         }
+
     }
 }
