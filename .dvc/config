@@ -1,0 +1,5 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = gs://my-dvc-1/
+    credentialpath = C:\Users\chinm\Downloads\mlops-463410-03082085435c.json
